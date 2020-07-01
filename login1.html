@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="login4.css">
+    <title>Hostel.io</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>Welcome to Nyumbani Hostel</h3>
+            <nav>
+                <ol>
+                    <li><a href="#login4">Home</a></li>
+                    <li><a href="hostel4.html">About</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ol>
+            </nav>
+            <button onclick="document.getElementById('login4').style.display='block'" style="width:100px;">Login</button>
+            
+        </header>
+       
+
+<div id="login4">
+  
+  <form class="content4" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('login4').style.display='none'" class="cancel4" title="Close Login">&times;</span>
+      <img src="img_avatar2.png" alt="Avatar" >
+    </div>
+
+    <div class="input4">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit" value="submit" id="account4">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+        <span class="forgot">Forgot <a href="#">password?</a></span>
+      </label>
+    </div>
+      
+  </form>
+ <div id="about">
+
+ </div>
+<footer id=contacts>
+  
+</footer>
+ 
+</div>
+<script>
+    var modal = document.getElementById('login4');
+    
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+
+    
+</body>
+</html>

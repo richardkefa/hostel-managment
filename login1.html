@@ -7,27 +7,37 @@
     <title>Hostel.io</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container1">
         <header>
-            <h3>Welcome to Nyumbani Hostel</h3>
+            <img src="./images/LOGO.jpeg" height="100px" width="100px" class="logo">
             <nav>
                 <ol>
                     <li><a href="#login4">Home</a></li>
                     <li><a href="hostel4.html">About</a></li>
-                    <li><a href="">Contact us</a></li>
+                    <li><a href="contact1.html">Contact us</a></li>
+                    <li> <a class="book" href="students.html">Book Now</a></li>
                 </ol>
+               
             </nav>
-            <button onclick="document.getElementById('login4').style.display='block'" style="width:100px;">Login</button>
+           
             
         </header>
-       
+        <div id="intro">
+          <p>
+              Nyumbani Hostel <br>
+              The home of peace and comfort.
+
+          </p>
+          
+          <button onclick="document.getElementById('login4').style.display='block'" style="width:100px;" id="logbtn">Login</button>
+        </div>
 
 <div id="login4">
   
   <form class="content4" action="/action_page.php" method="post">
     <div class="imgcontainer">
       <span onclick="document.getElementById('login4').style.display='none'" class="cancel4" title="Close Login">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" >
+      <img src="./images/avater.jpeg" alt="Avatar" >
     </div>
 
     <div class="input4">
@@ -41,15 +51,81 @@
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
         <span class="forgot">Forgot <a href="#">password?</a></span>
+        <br><span class="sign">Are you a Member?<a href="#sign1" onclick="document.getElementById('login4').style.display='none'; document.getElementById('sign1').style.display='block'">Sign up</a></span>
       </label>
     </div>
       
   </form>
- <div id="about">
+</div>
 
- </div>
-<footer id=contacts>
+<div id="sign1">
+  <span onclick="document.getElementById('sign1').style.display='none'" class="cancel4" title="Close sign up">&times;</span>
+  <form class="content4" action="/action_page.php">
+    <div class="signup">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('sign1').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+
+
+<div id="about1">
+  <ul>
+    <li><img src="./images/24-royalhighschool.jpg" width=170px; heigh=110px;><p><br>100 <br>Rooms</p></li>
+    <li><img src="./images/27-royalhighschool.jpg" width=170px; heigh=110px;><p><br> 10<br>Hangout<br>Zone</p></li>
+    <li><img src="./images/_dsc0897-copy.jpg" width=170px; heigh=110px;><p><br>Diverse <br> Society</p></li>
+  </ul>
+</div>
+ <div id="about2" class="overlay">
   
+   <h3> Who We Are</h3>
+      <p>
+        We share a set of core values that define us as an organization and . The values are:<br><br>
+        <ul>
+          <li>Integrity-We demonstrate honesty, fairness, openness and clear boundaries, in all our interactions,<br>
+            behaviors, and practices, within the organization, with our clients and the wider community.</li>
+            <li>Respect-We acknowledge and respect differences in each other, and provide a safe,<br>
+              supportive environment in which all individuals and staff are valued, and encouraged to engage in open two-way communication.
+            </li>
+            <li>Passion-We stand up for what we believe in, and go the extra distance in all our activity</li>
+            <li>Excellence-We are setting the standards in service delivery, through a commitment <br>
+                to excellence, innovation, ongoing learning and continuous improvement.</li>
+        </ul>
+      </p>
+ </div>
+<footer>
+  <div id="contacts"  style="text-align: center;">
+    <img src="./images/LOGO.jpeg" height="100px" width="100px">
+    <h3 style="text-align: center;">Contact Us</h3>
+
+       <p><img src="./images/facebook.jpeg" style="height: 30px;"> Facebook: Nyumbani Hostels<br><br></p>
+       <p><img src="./images/twiter.jpeg"style="height: 30px;"> Twiter:  @Nyumbani hostels<br><br></p>    
+       <p> <img src="./images/instagram.jpeg"style="height: 30px;"> instagram: NyumbaniHostels</p>   
+       
+      
+</div>
+  <p style="text-align: center;" id="copy1">Copyright ©2020 Nyumbani Hostels, Inc. All rights reserved.Privacy & Legal Policies</p>
 </footer>
  
 </div>
@@ -62,6 +138,14 @@
         }
     }
     </script>
+    <script>
+      var signing = document.getElementById('sign1');
+      window.onclick = function(event) {
+        if (event.target == signing) {
+          modal.style.display = "none";
+        }
+      }
+      </script>
 
     
 </body>

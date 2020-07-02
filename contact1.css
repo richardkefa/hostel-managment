@@ -1,3 +1,12 @@
+.container6{
+      background-color: #D7CEC7;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      overflow: auto;
+
+}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -21,6 +30,20 @@ nav>ol>li>a:hover {
         color: #D7CEC7;
         border-radius: 10px;
 }
+
+.book{
+  background-color: #76323F;
+  color:white;
+  border-radius: 10px;
+  margin-left: 10px;
+  padding: 7px;
+}
+
+.book:hover {
+  background-color: black;
+}
+
+
 .logo {
     border: solid black;
     margin-bottom: 10px;
@@ -30,25 +53,56 @@ nav>ol>li>a:hover {
 .rig{
     display: flex;
     justify-content: space-around;
-    padding: 50px;
-    line-height-step: 2px;
+    padding: 5px;
+    margin-bottom: 25px;
+    
 }
+.rig>form>button {
+        font-size: large;
+        color: #D7CEC7;
+        background-color: #76323F;
+        border-radius: 20px;
+        margin-top: 20px;
+        cursor: pointer;
+}
+
+.rig>form>button :hover {
+            opacity: 0.5;
+}
+
+ input[type=text] {
+    margin: 10px;
+}
+
+.cover6{
+  background-image: url(https://elitehostels.co.ke/wp-content/uploads/2019/10/room-header.jpg);
+  background-size: cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: x-large;
+  color: #76323F;
+  cursor: pointer;
+  font-family: 'Fontdiner Swanky', cursive;
+  text-decoration: underline;
+}
+
 .box-body{
     display: flex;
     justify-content: space-around;
-    color: crimson;
-    box-shadow: 0px 15px 35px 0px rgba(25,54,86,0.07)
+    
 }
-.box-body > p{
-    color: crimson;
+.box-body > span{
+    color: #76323F;
+    border: #76323F solid 1px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color:#D7CEC7;
+
 }
-form{
-    width: 600px;
-    height: 600px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding: 0px 80px 80px 0px;
-}
+
 #contacts {
   background-color: #76323F;
   padding: 20px;

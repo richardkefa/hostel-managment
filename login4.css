@@ -1,0 +1,263 @@
+.container1{
+      display: flex;
+      flex-direction: column;
+      background-color:#D7CEC7;
+      overflow: auto;
+      box-sizing: border-box;
+}
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+  .imgcontainer>img {
+    width: 30%;
+    border-radius: 50%;
+  }
+  
+  .input4,.sign1 {
+    padding: 16px;
+  }
+  
+  span.forgot {
+    float: right;
+    padding-top: 16px;
+  }
+
+  /* Full-width input fields */
+  input[type=text], [type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #76323F;
+  color:#D7CEC7;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+  
+  /* The Modal (background) */
+  #login4,#sign1 {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .content4 {
+    background-color:#D7CEC7;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid black;
+    width: 50%; /* Could be more or less, depending on screen size */
+    padding: 20px;
+  }
+  
+  /* The Close Button (x) */
+  .cancel4 {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .cancel4:hover,
+  .cancel4:focus {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .content4 {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+  @keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+    span.forget {
+       display: block;
+       float: none;
+    }
+    
+  }
+
+header{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+
+}
+
+nav>ol{
+  list-style: none;
+}
+
+nav>ol>li{
+      display: inline-flex;
+      padding: 5px;
+      margin: 5px;
+}
+
+nav>ol>li>a{
+    text-decoration: none;
+    color: #76323F;
+    padding: 7px;
+    
+}
+
+nav>ol>li>a:hover {
+        background-color:#76323F;
+        color: #D7CEC7;
+        border-radius: 10px;
+}
+
+.logo {
+    border: solid black;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.book{
+      background-color: #76323F;
+      color:white;
+      border-radius: 10px;
+      margin-left: 10px;
+      padding: 7px;
+}
+
+.book:hover {
+      background-color: black;
+}
+
+#intro{
+      background-image: url(./images/27-royalhighschool.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      font-family: 'Fontdiner Swanky', cursive;
+      text-align: center;
+      
+
+}
+
+#about2{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(./images/58-royalhighschool.jpg);
+    background-size: cover;
+    color: white;
+    margin-bottom: 20px;
+    
+}
+
+#about2>ul>li{
+          margin-left: 50px;
+}
+
+#about2>h3 {
+      font-size: xx-large;
+      font-family: 'Fontdiner Swanky', cursive;
+      margin: 0;
+      border-bottom: solid white 4px;
+      color: white;
+}
+
+#about1>ul{
+      list-style: none;
+      display: flex;
+      justify-content: space-evenly;
+      border-top: solid 5px #76323F;
+      padding-top: 15px;
+      margin-top: 0;
+}
+
+#about1>ul>li>p{
+  text-align: center;
+  margin-top: -20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+  color: #76323F;
+}
+
+#about1>ul>li>img{
+        border-radius: 50%;
+        cursor: pointer;
+}
+
+#contacts {
+  background-color: #76323F;
+  padding: 20px;
+  border-radius: 200px;
+  color: white;
+  align-items: center;
+  
+  
+
+}
+
+#contacts>img{
+  float: left;
+  border: black solid;
+  margin-top: 20px;
+  margin-left: 25px;
+
+}
+
+#contacts>p{
+  display: inline-flex;
+  justify-content: space-evenly;
+  margin: 10px;
+  
+
+
+
+}
+
+#copy1{
+    background-color: #D7CEC7;
+    font-size: smaller;
+
+}

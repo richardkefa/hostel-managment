@@ -1,0 +1,29 @@
+.container{
+    line-height:300%;
+    column-count:2;
+    font-size:20px;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+body{
+    background-color: beige;
+}
+
+footer{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: larger;
+    text-align: center;
+    margin-top: 50px;
+    border-top: solid black 2px;
+}
+header{
+    border-bottom:2px solid black;
+}
+.submit3{
+    font-size: medium;
+    color:blue;
+    font-weight: bold;
+}
